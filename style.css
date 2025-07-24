@@ -12,3 +12,68 @@
 max-width: 100svw;
 height: 100svh;
 }
+
+
+
+
+
+
+
+
+
+
+<!-- Section 2 -->
+
+
+.summer-section * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow-x: hidden;
+}
+
+.summer-section .object-fit-cover {
+  object-fit: cover;
+  object-position: top center;
+}
+
+.summer-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.summer-section p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.summer-section .btn-outline-dark {
+  padding: 0.75rem 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 0;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .summer-section h2 {
+    font-size: 2rem;
+  }
+
+  .summer-section p {
+    font-size: 0.95rem;
+  }
+
+  .summer-section .btn-outline-dark {
+    width: 51%;
+  }
+}
+
+
+<!-- End of Section 2 -->
