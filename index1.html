@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+
+
+<!-- Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#"><strong>Barbour</strong></a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">New In</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Men</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Women</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Barbour International</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Accessories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Dogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Discover</a>
+                    </li>
+                </ul>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i> Search
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-image d-none d-md-block"></div>
+        
+        <!-- Mobile layout with image on top -->
+        <div class="d-md-none mobile-hero-wrapper">
+            <div class="hero-image"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="hero-content">
+                            <div class="sale-badge">New Lines Added</div>
+                            <h1 class="sale-title">SALE</h1>
+                            <p class="sale-subtitle">Up to 25% off</p>
+                            <button class="btn shop-btn">Shop the Sale</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Desktop layout -->
+        <div class="d-none d-md-block hero-content-wrapper">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="sale-badge">New Lines Added</div>
+                    <h1 class="sale-title">SALE</h1>
+                    <p class="sale-subtitle">Up to 25% off</p>
+                    <button class="btn shop-btn">Shop the Sale</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+<section class="summer-section">
+  <div class="container-fluid p-0">
+    <div class="row g-0 min-vh-100">
+      
+      <div class="col-12 col-md-9 p-0">
+        <img src="https://www.barbour.com/dw/image/v2/BLCL_PRD/on/demandware.static/-/Library-Sites-BarbourSharedLibrary/default/dw21b06c5e/homepage/SUMMER-SALE-TERTIARY.png?q=70&amp;sh=1000&amp;sw=1000" alt="Summer Shop" class="img-fluid w-100 h-100 object-fit-cover">
+        
+      </div>
+
+      <div class="col-12 col-md-3 d-flex align-items-center justify-content-center bg-white p-4">
+        <div class="text-start">
+          <h2 class="fw-bold display-6">Summer Shop</h2>
+          <p>Brighten up your summer this season and discover our summer clothing collection. Offering lightweight summer shirts, T-shirts to comfortable shorts, perfect for any summer setting.</p>
+          <p>Refresh your wardrobe and find stylish and comfortable summer clothes to embrace the warmer months.</p>
+          <p>Shop the perfect blend of Barbour’s classic design for your summer adventures and explore our summer collection today.</p>
+          <button class="btn btn-outline-dark mt-3">Shop the Collection</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End of Section 2 -->
+
+
+ <!-- section3 -->
+  <div class="container-fluid position-relative py-4 bg-white">
+    <h2 class="mb-4 ps-3">Selected for You</h2>
+
+    <!-- arrows -->
+    <button class="arrow-btn arrow-left" onclick="scrollLeft()">‹</button>
+    <button class="arrow-btn arrow-right" onclick="scrollRight()">›</button>
+
+    <!-- scrolling area -->
+    <div id="scrollContainer" class="scrolling-wrapper px-3">
+      <div class="card-wrapper">
+
+        <div class="card">
+          <img src="https://www.barbour.com/dw/image/v2/BLCL_PRD/on/demandware.static/-/Library-Sites-BarbourSharedLibrary/default/dw4a33276c/homepage/Secondary/womenswear.jpg?q=70&amp;sh=750&amp;sw=500" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Womenswear</h5>
+            <p class="card-text text-decoration-underline">Shop the Collection</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://www.barbour.com/dw/image/v2/BLCL_PRD/on/demandware.static/-/Library-Sites-BarbourSharedLibrary/default/dw3152ca50/homepage/Secondary/menswear.jpg?q=70&amp;sh=750&amp;sw=500" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Menswear</h5>
+            <p class="card-text text-decoration-underline">Shop the Collection</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://www.barbour.com/dw/image/v2/BLCL_PRD/on/demandware.static/-/Library-Sites-BarbourSharedLibrary/default/dw883b5c12/homepage/Secondary/accessories.jpg?q=70&amp;sh=750&amp;sw=500" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Accessories</h5>
+            <p class="card-text text-decoration-underline">Shop the Collection</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://www.barbour.com/dw/image/v2/BLCL_PRD/on/demandware.static/-/Library-Sites-BarbourSharedLibrary/default/dw34a4bb7c/homepage/Secondary/footwear.jpg?q=70&amp;sh=750&amp;sw=500" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Footwear</h5>
+            <p class="card-text text-decoration-underline">Shop the Collection</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="https://www.barbour.com/dw/image/v2/BLCL_PRD/on/demandware.static/-/Library-Sites-BarbourSharedLibrary/default/dwbd718bb9/homepage/dogs_secondary_carousel.png?q=70&amp;sh=750&amp;sw=500" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Dogs</h5>
+            <p class="card-text text-decoration-underline">Shop the Collection</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+<!-- End of Section 3 -->
+
+
+
+  <!-- Section 4 -->
+
+<section class="shop-section">
+  <div class="custom-container">
+    
+    <div class="image-block">
+      <img src="WSW WELLIES.webp" alt="Wellingtons">
+      <div class="overlay-content">
+        <h2>Wellingtons</h2>
+        <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+    </div>
+
+    <div class="image-block">
+      <img src="WSW SHIRTS.webp" alt="Women's Shirts">
+      <div class="overlay-content">
+        <h2>Women's Shirts</h2>
+        <a href="#" class="shop-btn">Shop Now</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- End of Section 4 -->
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h5>Customer Service</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Delivery & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>About Barbour</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Sustainability</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Repair Service</a></li>
+                        <li><a href="#">Care Instructions</a></li>
+                        <li><a href="#">Store Locator</a></li>
+                        <li><a href="#">Gift Cards</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5>Connect</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color: #495057;">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0">&copy; 2025 Barbour. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+ document.addEventListener('DOMContentLoaded', function() {
+    const container = document.querySelector('.scrolling-wrapper');
+    
+    document.querySelector('.arrow-left').addEventListener('click', function() {
+      container.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+    
+    document.querySelector('.arrow-right').addEventListener('click', function() {
+      container.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+  });
+</script>
+</body>
+</html>
